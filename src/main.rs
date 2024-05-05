@@ -14,7 +14,7 @@ fn main() -> Result<()> {
     enable_raw_mode()?;
 
     let mut terminal = Terminal::new(CrosstermBackend::new(stdout()))?;
-    terminal.clear();
+    terminal.clear()?;
 
     loop {
         // Draw UI
